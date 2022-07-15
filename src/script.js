@@ -217,6 +217,7 @@ const logoMaterial = new THREE.MeshBasicMaterial({
 
 const logo = new Mesh(logoGeometry,logoMaterial)
 logo.position.set(5,5,7)
+console.log(logo.position);
 cameraGroup.add(logo)
 
 
@@ -281,7 +282,7 @@ const tick = () => {
     //  camera.position.x += 0.1 * ( target.y - camera.rotation.x );
     //   camera.position.y += 0.05 *  ( target.x - camera.rotation.y );
 
-    console.log(camera.position);
+    
     camera.lookAt(5,4.5,7)
 
 }
