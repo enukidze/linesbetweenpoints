@@ -77,6 +77,7 @@ window.addEventListener('resize', () => {
 // Base camera
 const cameraGroup = new THREE.Group()
 scene.add(cameraGroup)
+
 const camera = new THREE.PerspectiveCamera(30, sizes.width / sizes.height, 0.1, 15)
 camera.position.x = 5
 camera.position.y = 4.5
@@ -85,10 +86,10 @@ camera.position.z = 40
 window.onload = function () {
 
     gsap.to(camera.position, {
-        duration: 0.5,
+        duration: 0.7,
         x: 5,
         y: 4.5,
-        z: 10
+        z: 11
     })
 
 }
