@@ -216,7 +216,7 @@ const logoMaterial = new THREE.MeshBasicMaterial({
 })
 
 const logo = new Mesh(logoGeometry,logoMaterial)
-logo.position.set(5,4.5,7)
+logo.position.set(5,5,7)
 cameraGroup.add(logo)
 
 
